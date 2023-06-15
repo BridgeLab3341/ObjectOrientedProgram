@@ -148,5 +148,25 @@ namespace ObjectOrientedProgram
             }
             Console.WriteLine(sum);
         }
+        public void SumOfMatrix()
+        {
+            int[,] matrix =
+            {
+                {1,2,3},
+                {4,5,6},
+                {5,6,7}
+            };
+            int rows=matrix.GetLength(0);
+            int columns=matrix.GetLength(1);
+            for(int i=0;i<rows;i++)
+            {
+                int rowSum = 0;
+                for(int j=0;j<columns;j++)
+                {
+                    rowSum+= matrix[i,j];
+                }
+                Console.WriteLine("Row"+(i+1)+" : "+rowSum );
+            }
+        }
     }
 }
