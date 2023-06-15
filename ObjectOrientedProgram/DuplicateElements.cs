@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Linq;
 
 namespace ObjectOrientedProgram
@@ -123,6 +124,18 @@ namespace ObjectOrientedProgram
             Console.WriteLine("*     *");
             Console.WriteLine("*     *");
             Console.WriteLine("*******");
+        }
+        public void ReverseEachWord()
+        {
+            string[] input = { "ReverseWord" };
+            string reverse = "";
+            for(int i=0; i < input.Length; i++)
+            {
+                char[] chars= input[i].ToCharArray();
+                Array.Reverse(chars);
+                reverse=new string(chars);
+                Console.WriteLine(reverse);
+            }
         }
     }
 }
