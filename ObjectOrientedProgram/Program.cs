@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose Option to Perform\n1.Duplicate Elements\n2.Unique Elements\n3.Frequency of Each Element\n4.Find Max And Min element in an Array\n5.Print Pattern\n6.Print Pattern 2\n7.Reverse of String\n8.Exit");
+                Console.WriteLine("Choose Option to Perform\n1.Duplicate Elements\n2.Unique Elements\n3.Frequency of Each Element\n4.Find Max And Min element in an Array\n5.Print Pattern\n6.Print Pattern 2\n7.Reverse of String\n8.Sum Of All Digits of Given Number\n9.Exit");
                 int option=Convert.ToInt32(Console.ReadLine());
                 DuplicateElements duplicate = new DuplicateElements();
 
@@ -34,7 +34,10 @@
                         case 7:
                         duplicate.ReverseEachWord();
                         break;
-                    case 8:
+                        case 8:
+                        duplicate.SumOfAllNumbers();
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }

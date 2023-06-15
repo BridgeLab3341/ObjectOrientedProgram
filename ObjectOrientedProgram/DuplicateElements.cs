@@ -137,5 +137,16 @@ namespace ObjectOrientedProgram
                 Console.WriteLine(reverse);
             }
         }
+        public void SumOfAllNumbers()
+        {
+            int number = 123675456;
+            int sum = 0;
+            string numberstring=number.ToString();
+            for(int i=0;i<numberstring.Length;i++)
+            {
+                sum += int.Parse(numberstring[i].ToString());
+            }
+            Console.WriteLine(sum);
+        }
     }
 }
