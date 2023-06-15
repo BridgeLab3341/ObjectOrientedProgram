@@ -114,5 +114,15 @@ namespace ObjectOrientedProgram
             Console.WriteLine("**");
             Console.WriteLine("*");
         }
+        public void Pattern2()
+        {
+            Console.WriteLine("*******");
+            Console.WriteLine("*     *");
+            Console.WriteLine("*     *");
+            Console.WriteLine("*     *");
+            Console.WriteLine("*     *");
+            Console.WriteLine("*     *");
+            Console.WriteLine("*******");
+        }
     }
 }

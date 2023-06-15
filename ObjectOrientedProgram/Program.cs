@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose Option to Perform\n1.Duplicate Elements\n2.Unique Elements\n3.Frequency of Each Element\n4.Find Max And Min element in an Array\n5.Print Pattern\n6.Exit");
+                Console.WriteLine("Choose Option to Perform\n1.Duplicate Elements\n2.Unique Elements\n3.Frequency of Each Element\n4.Find Max And Min element in an Array\n5.Print Pattern\n6.Print Pattern 2\n7.Exit");
                 int option=Convert.ToInt32(Console.ReadLine());
                 DuplicateElements duplicate = new DuplicateElements();
 
@@ -29,6 +29,9 @@
                         duplicate.Pattern();
                         break;
                     case 6:
+                        duplicate.Pattern2();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
