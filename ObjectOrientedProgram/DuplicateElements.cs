@@ -24,5 +24,25 @@ namespace ObjectOrientedProgram
             }
            Console.WriteLine(duplicate);
         }
+        public void PrintUniqueElements()
+        {
+            int[] array = {2,3,4,5,1,2,3,4,5,6,7,7,8};
+            for(int i=0;i<array.Length;i++)
+            {
+                bool duplicate = true;
+                for(int j=0;j<array.Length;j++)
+                {
+                    if (array[i] == array[j] && i!=j)
+                    {
+                        duplicate = false;
+                        break;
+                    }
+                }
+                if(duplicate)
+                {
+                    Console.WriteLine(array[i]);
+                }
+            }
+        }
     }
 }
