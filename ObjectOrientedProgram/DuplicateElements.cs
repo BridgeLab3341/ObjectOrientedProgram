@@ -103,5 +103,16 @@ namespace ObjectOrientedProgram
             }
             Console.WriteLine("Maximum :{0}  Minimum : {1}",max,min);
         }
+        public void Pattern()
+        {
+            Console.WriteLine("********");
+            Console.WriteLine("*******");
+            Console.WriteLine("******");
+            Console.WriteLine("*****");
+            Console.WriteLine("****");
+            Console.WriteLine("***");
+            Console.WriteLine("**");
+            Console.WriteLine("*");
+        }
     }
 }
